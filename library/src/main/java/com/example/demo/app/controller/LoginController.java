@@ -21,7 +21,7 @@ public class LoginController {
 
 	@RequestMapping("/")
 	public ModelAndView init(ModelAndView mv) {
-
+//Gitテスト１
 		mv.setViewName("/login");
 		return mv;
 	}
