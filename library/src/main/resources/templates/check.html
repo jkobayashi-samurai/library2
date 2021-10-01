@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>確認</title>
+</head>
+<body>
+	<form action="/check2" method="post">
+		<p th:text="${name}"></p>
+		<p th:text="${email}"></p>
+		<p th:text="${prefectureId}"></p>
+		<p th:text="${cityId}"></p>
+		<p th:text="${address}"></p>
+		<p th:text="${tel}"></p>
+		<p th:text="${birth_ymd}"></p>
+		<p th:text="${birth_ymd2}"></p>
+		<p th:text="${birth_ymd3}"></p>
+		<input type="submit" value="確定"><br>
+		<span th:text="${message}" style="color:red"></span>
+	</form>
+	<form action="/menu" method="post">
+		<input type="submit" value="戻る"><br>
+	</form>
+	
+</body>
+</html>
